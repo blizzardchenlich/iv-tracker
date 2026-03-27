@@ -1,0 +1,37 @@
+name: Daily IV Data Collection
+
+on:
+  schedule:
+    # 每天 22:00 UTC = 美东时间 18:00（收盘后两小时），仅工作日
+    - cron: '0 22 * * 1-5'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # 允许推送回仓库
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collector
+        run: python run.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add iv_data.db index.html
+          git diff --staged --quiet || git commit -m "Daily IV update $(date +%Y-%m-%d)"
+          git push
