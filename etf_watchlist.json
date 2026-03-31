@@ -1,0 +1,64 @@
+{
+  "etfs": {
+    "宽基指数": [
+      "SPY", "IVV", "VOO", "QQQ", "IWM", "DIA", "MDY", "IJH", "IJR",
+      "VTI", "RSP", "IWB", "IWD", "IWF", "VTV", "VUG", "ITOT", "SCHB"
+    ],
+    "板块_SPDR": [
+      "XLF", "XLE", "XLK", "XLY", "XLV", "XLI", "XLB", "XLP", "XLU", "XLRE", "XLC"
+    ],
+    "板块_行业": [
+      "SMH", "SOXX", "SOXL", "SOXS",
+      "IBB", "XBI", "LABU", "LABD",
+      "KRE", "KBE", "FAS", "FAZ",
+      "XRT", "JETS",
+      "OIH", "XOP",
+      "XME", "SLX",
+      "AMLP", "VNQ",
+      "ICLN", "TAN",
+      "HACK", "CIBR",
+      "BOTZ", "ROBO"
+    ],
+    "固定收益": [
+      "TLT", "IEF", "SHY", "SHV",
+      "AGG", "BND",
+      "LQD", "HYG", "JNK",
+      "TBT", "TMF", "TMV",
+      "MBB", "TIPS"
+    ],
+    "大宗商品": [
+      "GLD", "IAU", "SGOL",
+      "SLV",
+      "GDX", "GDXJ", "NUGT", "DUST", "JNUG", "JDST",
+      "USO", "UCO", "SCO",
+      "UNG", "BOIL", "KOLD",
+      "PDBC", "DJP"
+    ],
+    "杠杆_反向": [
+      "TQQQ", "SQQQ",
+      "SPXL", "SPXU", "UPRO", "SPXS",
+      "TNA", "TZA",
+      "ERX", "ERY",
+      "TECL", "TECS",
+      "FNGU", "FNGD",
+      "NAIL", "HIBL", "HIBS",
+      "CURE",
+      "UVXY", "VXX", "SVXY"
+    ],
+    "国际_新兴市场": [
+      "EEM", "VWO",
+      "EFA", "VEA",
+      "FXI", "MCHI", "KWEB", "ASHR",
+      "EWJ", "EWZ", "EWT", "EWY",
+      "EWW", "EWG", "EWU", "EWA",
+      "INDA", "ARGT"
+    ],
+    "主题_创新": [
+      "ARKK", "ARKG", "ARKW", "ARKF",
+      "SKYY", "CLOU",
+      "LIT", "REMX",
+      "MSOS",
+      "BITO"
+    ]
+  }
+}
